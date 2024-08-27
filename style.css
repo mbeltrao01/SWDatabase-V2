@@ -1,0 +1,230 @@
+body {
+    font-family: 'Star Wars', Arial, sans-serif;
+    background-color: #000000;
+    color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-image: url('https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?cs=srgb&dl=pexels-francesco-ungaro-998641.jpg&fm=jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.bnt-cadastro {
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+.bnt-cadastro button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: 2px solid #f8f8f8;
+    border-radius: 5px;
+    background-color: #ffcc00;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bnt-cadastro button:hover {
+    background-color: #ffaa00;
+}
+
+.buscar {
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+.buscar input[type="text"] {
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #f8f8f8;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: calc(100% - 120px);
+    box-sizing: border-box;
+    background-color: #333333;
+    color: #f8f8f8;
+}
+
+.buscar input[type="button"] {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: 2px solid #f8f8f8;
+    border-radius: 5px;
+    background-color: #ffcc00;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100px;
+    box-sizing: border-box;
+}
+
+.buscar input[type="button"]:hover {
+    background-color: #ffaa00;
+}
+
+.info-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.info h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.cadastro-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.cadastro-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ffcc00;
+}
+
+.cadastro-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro-container label {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.cadastro-container input[type="text"],
+.cadastro-container input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #f8f8f8;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #333333;
+    color: #f8f8f8;
+}
+
+.cadastro-container input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: 2px solid #f8f8f8;
+    border-radius: 5px;
+    background-color: #ffcc00;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cadastro-container input[type="submit"]:hover {
+    background-color: #ffaa00;
+}
+
+.cadastro-container .voltar button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: 2px solid #f8f8f8;
+    border-radius: 5px;
+    background-color: #ffcc00;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cadastro-container .voltar button:hover {
+    background-color: #ffaa00;
+}
+
+@media (max-width: 768px) {
+    .info-container, .cadastro-container {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .info h2, .cadastro-container h2 {
+        font-size: 22px;
+    }
+
+    .cadastro-container label {
+        font-size: 16px;
+    }
+
+    .cadastro-container input[type="text"],
+    .cadastro-container input[type="number"] {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .cadastro-container input[type="submit"],
+    .cadastro-container .voltar button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-container, .cadastro-container {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .info h2, .cadastro-container h2 {
+        font-size: 20px;
+    }
+
+    .cadastro-container label {
+        font-size: 14px;
+    }
+
+    .cadastro-container input[type="text"],
+    .cadastro-container input[type="number"] {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .cadastro-container input[type="submit"],
+    .cadastro-container .voltar button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}

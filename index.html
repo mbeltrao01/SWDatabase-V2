@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> 
+<head>
+    <title>Star Wars DataBase</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://i.pinimg.com/originals/73/db/97/73db97c0c4a9c9b009d69f21ea48ecdc.png" type="image/x-icon"> 
+</head>
+
+<body>
+    <div class="logo">
+        <img src="https://www.freeiconspng.com/uploads/star-wars-logo-png-image-0.png" alt="Logo Star Wars">
+    </div>
+
+    <div class="bnt-cadastro">
+        <a href="cadastro.html">
+            <button>Cadastrar Personagem</button>
+        </a>
+    </div>
+
+    <div class="buscar"> 
+        <input type="text" id="nomeInput" placeholder="Digite o nome do personagem"> 
+        <input type="button" value="Buscar" id="botao" onclick="procurar()"> 
+    </div>
+
+    <div class="info-container">
+        <div class="info">
+            <h2 id="nomeDisplay"></h2> 
+            <h2 id="generoDisplay"></h2>
+            <h2 id="alturaDisplay"></h2>
+            <h2 id="planetaDisplay"></h2>
+        </div>
+    </div>
+
+</body>
+<script src="./script.js"></script> 
+</html>

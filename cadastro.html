@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> 
+<head>
+    <title>Star Wars DataBase</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://i.pinimg.com/originals/73/db/97/73db97c0c4a9c9b009d69f21ea48ecdc.png" type="image/x-icon"> 
+</head>
+
+<body>
+    <div class="logo">
+        <img src="https://www.freeiconspng.com/uploads/star-wars-logo-png-image-0.png" alt="Logo Star Wars">
+    </div>
+
+    <div class="cadastro-container">
+        <h2>Cadastro de Personagem</h2>
+        <form id="cadastroForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite o nome do personagem" required>
+
+            <label for="genero">Gênero:</label>
+            <input type="text" id="genero" name="genero" placeholder="Digite o gênero do personagem" required>
+
+            <label for="altura">Altura (cm):</label>
+            <input type="number" id="altura" name="altura" placeholder="Digite a altura do personagem" required>
+
+            <label for="planeta">Planeta Natal:</label>
+            <input type="text" id="planeta" name="planeta" placeholder="Digite o planeta natal do personagem" required>
+
+            <input type="submit" value="Cadastrar" id="botao">
+        </form>
+        <a href="index.html" class="voltar"><button>Voltar para a Página Inicial</button></a>
+    </div>
+</body>
+<script src="./script.js"></script> 
+</html>
